@@ -1,0 +1,75 @@
+body {
+  background-color: #07051a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pong {
+  position: relative;
+  background-color: #3a2963;
+  width: 800px;
+  height: 400px;
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#paddleA,
+#paddleB {
+  position: absolute;
+  width: 10px;
+  height: 80px;
+  background-color: #fff;
+}
+
+#paddleA {
+  left: 10px;
+  background-color: #ff2e63;
+}
+
+#paddleB {
+  right: 10px;
+  background-color: #2ed8ff;
+}
+
+#ball {
+  position: absolute;
+  background-color: #ffcc29;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+#start-button {
+  background-color: #ffcc29;
+  color: #07051a;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#scoreboard {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#scoreboard span {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #fff;
+}
